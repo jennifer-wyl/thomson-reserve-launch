@@ -1,0 +1,29 @@
+.register-cta {
+  background: linear-gradient(135deg, #3a4736, #221f1a);
+  color: #fff;
+  text-align: center;
+}
+
+.register-cta-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-cta h2 {
+  color: #fff;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.register-cta p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 28px;
+}
+
+.register-cta-micro {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+}

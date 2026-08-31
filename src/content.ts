@@ -1,0 +1,254 @@
+// ============================================================
+// Thomson Reserve — single source of truth for all site copy.
+// This is the only file that should need editing as new facts
+// (pricing, TOP, exact unit sizes) are released by the developer.
+//
+// Sourcing notes (see docs/thomson-reserve-research.md for detail):
+// - Facts below are drawn from the developer's official "Thomson
+//   Reserve Ebook" (V3 & V4, PropNex agent collateral) and Jennifer's
+//   own Thomson_Reserve_Cheat_Sheet.docx, cross-checked against a
+//   public report (The Edge Singapore) for the en-bloc price.
+// - A third document in the research folder ("ThonsonReserveCheatSheet_V1.pdf")
+//   contains conflicting facts (wrong location "Lentor Central", wrong
+//   block count, wrong TOP date, slightly different unit-mix numbers)
+//   that do NOT match the other two sources — treated as a stale/incorrect
+//   draft and NOT used anywhere in this file. Flag raised with Jennifer.
+// - Per her standing instruction, unit COUNTS and % mix are intentionally
+//   left off this public site even though the collection names/types are
+//   shown — she prefers those gated behind a "Contact Agent" CTA.
+// - Any field genuinely not yet released is tagged // PLACEHOLDER and
+//   written as an honest holding line, never a guessed number.
+// ============================================================
+
+export const site = {
+  projectName: 'Thomson Reserve',
+  developerLine: 'A premium development by Tamarind Development Pte. Ltd.',
+  district: 'District 20',
+  address: '1, 3, 5, 7, 9, 11 Bright Hill Drive, Singapore',
+  tenure: '99-Year Leasehold',
+  previewDate: '3 October 2026',
+  launchDate: '17 October 2026',
+  agent: {
+    name: 'Jennifer Wong',
+    handle: '@ImJen.Wong',
+    title: 'Property Strategist, PropNex Realty',
+    ceaReg: 'R073354G', // PLACEHOLDER-RESOLVED: her Thomson_Reserve_Cheat_Sheet.docx shows
+    // "R033754G" (likely a typo/digit transposition) — using the verified number
+    // she gave for this project and that matches her Lucerne Grand site instead.
+    agencyName: 'PropNex Realty Pte Ltd',
+    agencyLicence: 'L3008022J', // verified via public CEA agency listing, Aug 2026
+    email: 'jenniferWong.YL@propnex.com',
+  },
+}
+
+export const header = {
+  logoText: 'Thomson Reserve',
+  navLinks: [
+    { label: 'Highlights', href: '#highlights' },
+    { label: 'Gallery', href: '#gallery' },
+    { label: 'Unit Types', href: '#unit-types' },
+    { label: 'Pricing', href: '#pricing' },
+    { label: 'Why Choose', href: '#why-choose' },
+    { label: 'FAQ', href: '#faq' },
+  ],
+  ctaLabel: 'Register Interest',
+}
+
+export const hero = {
+  eyebrow: `Previewing ${'3 October 2026'} · District 20, Upper Thomson`,
+  headline: '2 Minutes to Upper Thomson MRT. A Home Bordered by Nature Reserves.',
+  subheadline:
+    'Thomson Reserve rises on Bright Hill Drive — the site of the former Thomson View Condominium — as a joint venture by UOL Group, Singapore Land Group and CapitaLand Development. 1,268 homes across six towers, framed by Windsor Nature Park and the Central Catchment Nature Reserve.',
+  primaryCta: 'Register for Preview Updates',
+  secondaryCta: 'See Location Highlights',
+  facts: [
+    { label: 'District', value: '20' },
+    { label: 'Tenure', value: '99 Years' },
+    { label: 'Total Units', value: '1,268' },
+    { label: 'Preview', value: '3 Oct 2026' },
+  ],
+}
+
+export const highlights = {
+  sectionLabel: 'Location & Connectivity',
+  heading: 'Three dimensions of living rarely found at one address',
+  sub: 'Nature, education and connectivity converge on Bright Hill Drive — here is what that means in practical terms for an upgrading family.',
+  cards: [
+    {
+      icon: 'train',
+      title: 'Doorstep to Upper Thomson MRT',
+      body:
+        'A sheltered pedestrian link from the main entrance gets you to Upper Thomson MRT (Thomson-East Coast Line) Exit 2 in about 2 minutes. From there, Orchard Road, Marina Bay, Shenton Way CBD, Stevens (Downtown Line interchange), Outram Park and Gardens by the Bay are all direct — no transfer needed. Circle Line is one stop away at Caldecott, and the future Cross Island Line is planned to run via Bright Hill.',
+    },
+    {
+      icon: 'leaf',
+      title: 'Bordered by protected nature reserves',
+      body:
+        'Thomson Reserve sits next to Windsor Nature Park and the Central Catchment Nature Reserve — over 2,000 hectares of protected forest with 20km+ of trails around MacRitchie. Because reserve land cannot be built on, nature-facing units keep a view that cannot be blocked by future development.',
+    },
+    {
+      icon: 'school',
+      title: 'Within a well-regarded school belt',
+      body:
+        'Ai Tong School is within 1km, which gives Phase 2C ballot priority for Primary 1 registration — a real advantage for young families. Catholic High School, CHIJ St Nicholas Girls’ School, Marymount Convent School and Eunoia Junior College are all within 2km, with Raffles Institution nearby.',
+    },
+    {
+      icon: 'basket',
+      title: 'Everyday amenities within walking distance',
+      body:
+        'Thomson Plaza sits directly opposite, with FairPrice Finest, Sheng Siong and a Koufu food court. Sin Ming Plaza and the Upper Thomson Road dining and cafe belt are close by, along with fitness studios, MacRitchie’s hiking trails, and the Singapore Island Country Club nearby for golf.',
+    },
+  ],
+  legacyNote:
+    'Thomson Reserve is the redevelopment of the former Thomson View Condominium, which went through five collective sale attempts before being acquired by the UOL / Singapore Land Group / CapitaLand Development consortium for S$810 million (about S$1,178 psf ppr) — reported by The Edge Singapore.',
+}
+
+export const gallery = {
+  sectionLabel: 'Gallery',
+  heading: 'Grand Clubhouse, Island Club & Wellness Club',
+  sub:
+    'Thomson Reserve spans a 5-hectare site (about 7 football fields) with 80+ facilities across three zones. Renderings below are placeholders pending cleared marketing images from the developer.',
+  // PLACEHOLDER: swap these labelled tiles for approved renderings once Jennifer
+  // confirms she has clearance to publish images beyond the agent-only ebook.
+  facilities: [
+    { zone: 'Island Club', name: 'Infinity Lap Pool (50m)' },
+    { zone: 'Island Club', name: 'Cedar Room, Function Room' },
+    { zone: 'Grand Clubhouse', name: 'Canopy Lap Pool (50m) & Hammock Cove' },
+    { zone: 'Grand Clubhouse', name: 'Little Explorer Nook, Kids Play Room' },
+    { zone: 'Grand Clubhouse', name: 'Grand Lawn Pavilion' },
+    { zone: 'Wellness Club', name: 'Hydro Spa Pool & Wellness Pods' },
+    { zone: 'Wellness Club', name: 'Pilates & Wellness Studio' },
+    { zone: 'Wellness Club', name: 'Private Gym' },
+  ],
+}
+
+// Unit type NAMES only — counts and % mix intentionally withheld per Jennifer's
+// standing instruction (see Lucerne Grand precedent). Shown as gated "Draft" cards.
+export const floorPlans = {
+  sectionLabel: 'Unit Types',
+  heading: 'Two collections, ten configurations',
+  sub:
+    'Thomson Reserve offers 2 to 5-bedroom homes across a Classic Collection and a Luxury Collection with private-lift access. Exact sizes and the full layout set are released closer to preview — message Jennifer directly for the latest floor plans.',
+  collections: [
+    {
+      name: 'Classic Collection',
+      description: 'Well-proportioned homes across four mid-rise towers.',
+      types: [
+        '2-Bedroom',
+        '2-Bedroom Premium',
+        '2-Bedroom Premium + Study',
+        '3-Bedroom',
+        '3-Bedroom Premium',
+        '3-Bedroom Premium + Study',
+        '4-Bedroom',
+      ],
+    },
+    {
+      name: 'Luxury Collection',
+      description: 'Private-lift homes in the development’s two signature 30-storey towers.',
+      types: ['4-Bedroom Premium (Private Lift)', '4-Bedroom Premium + Study (Private Lift)', '5-Bedroom Suite (Private Lift)'],
+    },
+  ],
+  gatedCtaLabel: 'Contact Agent for Latest Layout',
+}
+
+export const pricing = {
+  sectionLabel: 'Pricing',
+  heading: 'Pricing has not been released yet',
+  sub:
+    'The developer has not released PSF or unit pricing for Thomson Reserve as at the time of writing. Register below and Jennifer will send you the indicative price list as soon as it is confirmed — usually shortly before the preview.',
+  // PLACEHOLDER: replace with indicative PSF-from figure once released, in the
+  // same "From $2,xxx psf" style used on the Lucerne Grand site.
+  note: 'To be confirmed closer to preview.',
+}
+
+export const whyChoose = {
+  sectionLabel: 'Why Choose Thomson Reserve',
+  heading: 'A rare joint venture, at genuine scale',
+  sub: 'A short, factual look at who is building it and why the scale matters.',
+  points: [
+    {
+      title: 'Three established Singapore developers, building as one',
+      body:
+        'Tamarind Development Pte. Ltd. is a joint venture between UOL Group Limited, Singapore Land Group Limited and CapitaLand Development Pte. Ltd. — all SGX-listed, with a combined track record spanning decades, including recent projects such as Skye at Holland and Parktown Residences.',
+    },
+    {
+      title: 'An experienced project team',
+      body:
+        'Main contractor Lian Beng Construction, architect P&T Consultants, landscape architect 2nd Edition Pte. Ltd., and interior design by Eco Plan Asia Pte. Ltd.',
+    },
+    {
+      title: 'Genuine scale',
+      body:
+        '1,268 units across six towers (two 30-storey, four 21-storey) on a 5-hectare site, with 1,014 carpark lots and 80+ facilities. Larger developments typically mean lower per-owner maintenance costs and more comparable transactions for resale price discovery.',
+    },
+    {
+      title: 'A well-documented land history',
+      body:
+        'The former Thomson View Condominium took five collective sale attempts before succeeding — the consortium eventually paid S$810 million (about S$1,178 psf ppr), reported at the time as a comparatively favourable land cost against other Rest-of-Central-Region sites.',
+    },
+  ],
+}
+
+export const faq = {
+  sectionLabel: 'FAQ',
+  heading: 'Common questions',
+  items: [
+    {
+      q: 'When is the preview and official launch?',
+      a: 'Preview is on 3 October 2026, with the official launch on 17 October 2026. Developer marketing materials currently describe this only as "October 2026" — register to get the exact confirmed schedule and your preview slot from Jennifer directly.',
+    },
+    {
+      q: 'Where exactly is Thomson Reserve?',
+      a: 'At 1, 3, 5, 7, 9, 11 Bright Hill Drive, District 20 — the site of the former Thomson View Condominium.',
+    },
+    {
+      q: 'How far is it from Upper Thomson MRT?',
+      a: 'About a 2-minute sheltered walk to Exit 2, via a pedestrian link from the main entrance.',
+    },
+    {
+      q: 'What is the tenure?',
+      a: '99-year leasehold.',
+    },
+    {
+      q: 'What is the unit mix?',
+      a: '2 to 5-bedroom homes across a Classic Collection and a Luxury Collection (with private lift access). Exact configurations, sizes and the full unit count breakdown will be shared closer to preview — contact Jennifer for the latest layouts.',
+    },
+    {
+      q: 'What is the price?',
+      a: 'Not yet released by the developer. Register your interest and you will be one of the first to receive the indicative price list.',
+    },
+    {
+      q: 'When is TOP (completion)?',
+      a: 'Not yet confirmed by the developer as at time of writing — this page will be updated the moment it is released.',
+    },
+    {
+      q: 'Who is the developer?',
+      a: 'Tamarind Development Pte. Ltd., a joint venture between UOL Group Limited, Singapore Land Group Limited and CapitaLand Development Pte. Ltd.',
+    },
+    {
+      q: 'Is this a good fit for an HDB upgrader?',
+      a: 'Thomson Reserve sits in a mature, established District 20 estate with a strong school belt and direct CBD access on the TEL — factors many upgrading families weigh heavily. Whether it fits your specific budget, timeline and CPF/loan position depends on your numbers — happy to run through them with you.',
+    },
+  ],
+}
+
+export const registerCta = {
+  heading: 'Follow Thomson Reserve before the preview',
+  sub:
+    'Leave your details and Jennifer will send you confirmed dates, the price list once released, and a private link to book your preview slot — no obligation.',
+  ctaLabel: 'Register Your Interest',
+  microcopy: 'Takes under a minute. Your information goes directly to Jennifer, not a call centre.',
+}
+
+export const footer = {
+  agentBlock: {
+    name: 'Jennifer Wong',
+    title: 'Property Strategist, PropNex Realty',
+    handle: '@ImJen.Wong',
+    email: 'jenniferWong.YL@propnex.com',
+  },
+  disclaimer:
+    'Thomson Reserve is an independent, unofficial marketing site prepared by a PropNex-appointed agent. Information is compiled from the developer’s marketing materials and publicly available sources, believed accurate at the time of publishing and subject to the developer’s final confirmation. This is not the official developer website. All renderings referenced are artist’s impressions.',
+  cea: 'Prepared by Jennifer Wong · PropNex Realty Pte Ltd · CEA Licence No. L3008022J · CEA Registration No. R073354G',
+}
