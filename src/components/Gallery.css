@@ -38,7 +38,7 @@
 .gallery-zone {
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--color-accent);
   margin-bottom: 4px;
 }

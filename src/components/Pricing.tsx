@@ -13,7 +13,7 @@ export default function Pricing() {
         <div className="pricing-panel">
           <div className="pricing-note">{pricing.note}</div>
           <a className="btn btn-primary" href={LEAD_FORM_URL} target="_blank" rel="noreferrer">
-            Notify Me When Pricing Is Out
+            Get the Price List
           </a>
         </div>
       </div>

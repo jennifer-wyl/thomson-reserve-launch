@@ -55,8 +55,8 @@
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--color-accent);
-  background: rgba(255, 255, 255, 0.7);
+  color: var(--color-accent-text);
+  background: rgba(255, 255, 255, 0.85);
   padding: 3px 8px;
   border-radius: 999px;
   border: 1px solid var(--color-accent);

@@ -28,6 +28,9 @@ export const site = {
   tenure: '99-Year Leasehold',
   previewDate: '3 October 2026',
   launchDate: '17 October 2026',
+  // Sales status (Jennifer, 16 Nov 2026). Update both values together.
+  soldPercent: '90.62%',
+  soldAsAt: '16 Nov 2026',
   agent: {
     name: 'Jennifer Wong',
     handle: '@ImJen.Wong',
@@ -51,21 +54,21 @@ export const header = {
     { label: 'Why Choose', href: '#why-choose' },
     { label: 'FAQ', href: '#faq' },
   ],
-  ctaLabel: 'Register Interest',
+  ctaLabel: 'Check Availability',
 }
 
 export const hero = {
-  eyebrow: `Previewing ${'3 October 2026'} · District 20, Upper Thomson`,
+  eyebrow: 'Now selling · 90.62% sold as at 16 Nov 2026',
   headline: '2 Minutes to Upper Thomson MRT. A Home Bordered by Nature Reserves.',
   subheadline:
     'Thomson Reserve rises on Bright Hill Drive — the site of the former Thomson View Condominium — as a joint venture by UOL Group, Singapore Land Group and CapitaLand Development. 1,268 homes across six towers, framed by Windsor Nature Park and the Central Catchment Nature Reserve.',
-  primaryCta: 'Register for Preview Updates',
+  primaryCta: 'Check Availability',
   secondaryCta: 'See Location Highlights',
   facts: [
     { label: 'District', value: '20' },
     { label: 'Tenure', value: '99 Years' },
     { label: 'Total Units', value: '1,268' },
-    { label: 'Preview', value: '3 Oct 2026' },
+    { label: 'Sold', value: '90.62%' },
   ],
 }
 
@@ -128,7 +131,7 @@ export const floorPlans = {
   sectionLabel: 'Unit Types',
   heading: 'Two collections, ten configurations',
   sub:
-    'Thomson Reserve offers 2 to 5-bedroom homes across a Classic Collection and a Luxury Collection with private-lift access. Exact sizes and the full layout set are released closer to preview — message Jennifer directly for the latest floor plans.',
+    'Thomson Reserve offers 2 to 5-bedroom homes across a Classic Collection and a Luxury Collection with private-lift access. Message Jennifer directly for exact sizes and the latest floor plans.',
   collections: [
     {
       name: 'Classic Collection',
@@ -149,17 +152,17 @@ export const floorPlans = {
       types: ['4-Bedroom Premium (Private Lift)', '4-Bedroom Premium + Study (Private Lift)', '5-Bedroom Suite (Private Lift)'],
     },
   ],
-  gatedCtaLabel: 'Contact Agent for Latest Layout',
+  gatedCtaLabel: 'Get Latest Layout',
 }
 
 export const pricing = {
   sectionLabel: 'Pricing',
-  heading: 'Pricing has not been released yet',
+  heading: 'Ask for the current price list',
   sub:
-    'The developer has not released PSF or unit pricing for Thomson Reserve as at the time of writing. Register below and Jennifer will send you the indicative price list as soon as it is confirmed — usually shortly before the preview.',
+    'With 90.62% sold as at 16 Nov 2026, prices depend on which units are still open. Jennifer will send you the current price list and the remaining units.',
   // PLACEHOLDER: replace with indicative PSF-from figure once released, in the
   // same "From $2,xxx psf" style used on the Lucerne Grand site.
-  note: 'To be confirmed closer to preview.',
+  note: 'Current price list and remaining units on request.',
 }
 
 export const whyChoose = {
@@ -195,8 +198,8 @@ export const faq = {
   heading: 'Common questions',
   items: [
     {
-      q: 'When is the preview and official launch?',
-      a: 'Preview is on 3 October 2026, with the official launch on 17 October 2026. Developer marketing materials currently describe this only as "October 2026" — register to get the exact confirmed schedule and your preview slot from Jennifer directly.',
+      q: 'Is Thomson Reserve still selling?',
+      a: 'Yes. Preview was on 3 October 2026 and the official launch on 17 October 2026, and it was 90.62% sold as at 16 Nov 2026. Ask Jennifer which units are still available.',
     },
     {
       q: 'Where exactly is Thomson Reserve?',
@@ -212,11 +215,11 @@ export const faq = {
     },
     {
       q: 'What is the unit mix?',
-      a: '2 to 5-bedroom homes across a Classic Collection and a Luxury Collection (with private lift access). Exact configurations, sizes and the full unit count breakdown will be shared closer to preview — contact Jennifer for the latest layouts.',
+      a: '2 to 5-bedroom homes across a Classic Collection and a Luxury Collection (with private lift access). Contact Jennifer for exact configurations, sizes and the latest layouts.',
     },
     {
       q: 'What is the price?',
-      a: 'Not yet released by the developer. Register your interest and you will be one of the first to receive the indicative price list.',
+      a: 'Prices depend on which units are still available. Ask Jennifer for the current price list.',
     },
     {
       q: 'When is TOP (completion)?',
@@ -234,10 +237,10 @@ export const faq = {
 }
 
 export const registerCta = {
-  heading: 'Follow Thomson Reserve before the preview',
+  heading: 'Check which units are left',
   sub:
-    'Leave your details and Jennifer will send you confirmed dates, the price list once released, and a private link to book your preview slot — no obligation.',
-  ctaLabel: 'Register Your Interest',
+    'Leave your details and Jennifer will send the remaining units, the current price list and viewing times, with no obligation.',
+  ctaLabel: 'Check Availability',
   microcopy: 'Takes under a minute. Your information goes directly to Jennifer, not a call centre.',
 }
 

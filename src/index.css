@@ -23,6 +23,7 @@
   --color-text: #221f1a;
   --color-text-muted: #5c584f;
   --color-accent-soft: #e8d6a6;
+  --color-accent-text: #7a5c1f; /* 16 Nov 2026: gold dark enough for text on light grounds */
 
   --font-serif: 'Georgia', 'Iowan Old Style', 'Times New Roman', serif;
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -88,7 +89,7 @@ img {
   letter-spacing: 0.14em;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   margin-bottom: 12px;
   display: block;
 }
@@ -165,4 +166,14 @@ img {
   .section {
     padding: 56px 0;
   }
+}
+
+/* 16 Nov 2026: bright gold labels only on the dark sections */
+.section-alt .section-label {
+  color: var(--color-accent);
+}
+
+/* 16 Nov 2026: stop sideways scroll on small phones */
+html, body {
+  overflow-x: clip;
 }
