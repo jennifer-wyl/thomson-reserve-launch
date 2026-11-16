@@ -48,7 +48,7 @@ export const header = {
   logoText: 'Thomson Reserve',
   navLinks: [
     { label: 'Highlights', href: '#highlights' },
-    { label: 'Gallery', href: '#gallery' },
+    { label: 'Facilities', href: '#gallery' },
     { label: 'Unit Types', href: '#unit-types' },
     { label: 'Pricing', href: '#pricing' },
     { label: 'Why Choose', href: '#why-choose' },
@@ -59,9 +59,9 @@ export const header = {
 
 export const hero = {
   eyebrow: 'Now selling · 90.62% sold as at 16 Nov 2026',
-  headline: '2 Minutes to Upper Thomson MRT. A Home Bordered by Nature Reserves.',
+  headline: '2 minutes to Upper Thomson MRT',
   subheadline:
-    'Thomson Reserve rises on Bright Hill Drive — the site of the former Thomson View Condominium — as a joint venture by UOL Group, Singapore Land Group and CapitaLand Development. 1,268 homes across six towers, framed by Windsor Nature Park and the Central Catchment Nature Reserve.',
+    'A new condo on Bright Hill Drive, bordered by Windsor Nature Park and the Central Catchment Nature Reserve.',
   primaryCta: 'Check Availability',
   secondaryCta: 'See Location Highlights',
   facts: [
@@ -75,31 +75,31 @@ export const hero = {
 export const highlights = {
   sectionLabel: 'Location & Connectivity',
   heading: 'Three dimensions of living rarely found at one address',
-  sub: 'Nature, education and connectivity converge on Bright Hill Drive — here is what that means in practical terms for an upgrading family.',
+  sub: 'What Bright Hill Drive means for an upgrading family.',
   cards: [
     {
       icon: 'train',
       title: 'Doorstep to Upper Thomson MRT',
       body:
-        'A sheltered pedestrian link from the main entrance gets you to Upper Thomson MRT (Thomson-East Coast Line) Exit 2 in about 2 minutes. From there, Orchard Road, Marina Bay, Shenton Way CBD, Stevens (Downtown Line interchange), Outram Park and Gardens by the Bay are all direct — no transfer needed. Circle Line is one stop away at Caldecott, and the future Cross Island Line is planned to run via Bright Hill.',
+        'A sheltered link takes you to Upper Thomson MRT (Thomson-East Coast Line) Exit 2 in about 2 minutes. Orchard, Marina Bay and Shenton Way are direct, and the Circle Line is one stop away at Caldecott.',
     },
     {
       icon: 'leaf',
       title: 'Bordered by protected nature reserves',
       body:
-        'Thomson Reserve sits next to Windsor Nature Park and the Central Catchment Nature Reserve — over 2,000 hectares of protected forest with 20km+ of trails around MacRitchie. Because reserve land cannot be built on, nature-facing units keep a view that cannot be blocked by future development.',
+        'Next to Windsor Nature Park and the Central Catchment Nature Reserve: over 2,000 hectares of protected forest. Reserve land cannot be built on, so nature-facing views stay open.',
     },
     {
       icon: 'school',
       title: 'Within a well-regarded school belt',
       body:
-        'Ai Tong School is within 1km, which gives Phase 2C ballot priority for Primary 1 registration — a real advantage for young families. Catholic High School, CHIJ St Nicholas Girls’ School, Marymount Convent School and Eunoia Junior College are all within 2km, with Raffles Institution nearby.',
+        'Ai Tong School is within 1km, giving Phase 2C priority for Primary 1. Catholic High, CHIJ St Nicholas Girls’, Marymount Convent and Eunoia JC are within 2km.',
     },
     {
       icon: 'basket',
       title: 'Everyday amenities within walking distance',
       body:
-        'Thomson Plaza sits directly opposite, with FairPrice Finest, Sheng Siong and a Koufu food court. Sin Ming Plaza and the Upper Thomson Road dining and cafe belt are close by, along with fitness studios, MacRitchie’s hiking trails, and the Singapore Island Country Club nearby for golf.',
+        'Thomson Plaza is directly opposite, with FairPrice Finest, Sheng Siong and a Koufu food court. Upper Thomson Road’s cafes and MacRitchie’s trails are close by.',
     },
   ],
   legacyNote:
@@ -107,10 +107,10 @@ export const highlights = {
 }
 
 export const gallery = {
-  sectionLabel: 'Gallery',
+  sectionLabel: 'Facilities',
   heading: 'Grand Clubhouse, Island Club & Wellness Club',
   sub:
-    'Thomson Reserve spans a 5-hectare site (about 7 football fields) with 80+ facilities across three zones. Renderings below are placeholders pending cleared marketing images from the developer.',
+    'A 5-hectare site (about 7 football fields) with 80+ facilities across three clubs. Selected facilities:',
   // PLACEHOLDER: swap these labelled tiles for approved renderings once Jennifer
   // confirms she has clearance to publish images beyond the agent-only ebook.
   facilities: [
@@ -131,7 +131,7 @@ export const floorPlans = {
   sectionLabel: 'Unit Types',
   heading: 'Two collections, ten configurations',
   sub:
-    'Thomson Reserve offers 2 to 5-bedroom homes across a Classic Collection and a Luxury Collection with private-lift access. Message Jennifer directly for exact sizes and the latest floor plans.',
+    '2 to 5-bedroom homes across a Classic Collection and a Luxury Collection with private-lift access. Layouts are draft; message Jennifer for exact sizes and the latest floor plans.',
   collections: [
     {
       name: 'Classic Collection',

@@ -16,14 +16,11 @@ export default function FloorPlans() {
               <h3>{col.name}</h3>
               <p className="collection-desc">{col.description}</p>
 
-              <div className="unit-type-list">
+              <ul className="unit-type-list">
                 {col.types.map((t) => (
-                  <div className="unit-type-draft" key={t}>
-                    <span className="unit-type-draft-label">{t}</span>
-                    <span className="unit-type-draft-watermark">DRAFT</span>
-                  </div>
+                  <li key={t}>{t}</li>
                 ))}
-              </div>
+              </ul>
 
               <a className="btn btn-outline unit-type-cta" href={CONTACT_URL}>
                 {floorPlans.gatedCtaLabel}
