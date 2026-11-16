@@ -1,9 +1,17 @@
 import { gallery } from '../content'
 import './Gallery.css'
+import islandClub from '../assets/renders/island-club.jpg'
+import grandClubhouse from '../assets/renders/grand-clubhouse.jpg'
+import wellnessClub from '../assets/renders/wellness-club.jpg'
 
-// 16 Nov 2026: the placeholder gradient tiles are replaced by the facility
-// names grouped by club. When cleared renderings arrive, add an `image` to
-// each facility in content.ts and bring back a picture grid here.
+// Developer renderings from the Thomson Reserve ebook V4 (pp. 10, 11, 13),
+// cleared for the public site by Jennifer on 16 Nov 2026.
+const zoneImages: Record<string, { src: string; alt: string }> = {
+  'Island Club': { src: islandClub, alt: 'Island Club poolside lounge' },
+  'Grand Clubhouse': { src: grandClubhouse, alt: 'Grand Clubhouse beside the pool' },
+  'Wellness Club': { src: wellnessClub, alt: 'Wellness Club hydro spa pool' },
+}
+
 export default function Gallery() {
   const zones = [...new Set(gallery.facilities.map((f) => f.zone))]
   return (
@@ -16,6 +24,12 @@ export default function Gallery() {
         <div className="facility-zones">
           {zones.map((zone) => (
             <div className="facility-zone" key={zone}>
+              {zoneImages[zone] && (
+                <figure className="facility-photo">
+                  <img src={zoneImages[zone].src} alt={zoneImages[zone].alt} loading="lazy" />
+                  <figcaption>Artist’s impression</figcaption>
+                </figure>
+              )}
               <h3 className="facility-zone-name">{zone}</h3>
               <ul className="facility-list">
                 {gallery.facilities

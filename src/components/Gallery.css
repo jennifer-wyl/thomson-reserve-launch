@@ -45,3 +45,21 @@
     gap: 32px;
   }
 }
+
+.facility-photo {
+  margin: 0 0 20px;
+}
+
+.facility-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+.facility-photo figcaption {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}

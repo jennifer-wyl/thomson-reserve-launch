@@ -110,9 +110,9 @@ export const gallery = {
   sectionLabel: 'Facilities',
   heading: 'Grand Clubhouse, Island Club & Wellness Club',
   sub:
-    'A 5-hectare site (about 7 football fields) with 80+ facilities across three clubs. Selected facilities:',
-  // PLACEHOLDER: swap these labelled tiles for approved renderings once Jennifer
-  // confirms she has clearance to publish images beyond the agent-only ebook.
+    'A 5-hectare site (about 7 football fields) with 80+ facilities across three clubs.',
+  // Renderings for each club come from the ebook V4 (see Gallery.tsx);
+  // Jennifer confirmed clearance to publish them on 16 Nov 2026.
   facilities: [
     { zone: 'Island Club', name: 'Infinity Lap Pool (50m)' },
     { zone: 'Island Club', name: 'Cedar Room, Function Room' },

@@ -7,10 +7,31 @@
 .hero-backdrop {
   position: absolute;
   inset: 0;
+  /* 16 Nov 2026: developer rendering (ebook p10) under a gradient that keeps
+     the left-hand text readable and lets the towers show on the right */
   background:
-    linear-gradient(180deg, rgba(34, 31, 26, 0.55) 0%, rgba(34, 31, 26, 0.86) 78%, var(--color-dark) 100%),
-    radial-gradient(120% 90% at 12% 8%, rgba(201, 162, 75, 0.35) 0%, rgba(201, 162, 75, 0) 55%),
-    linear-gradient(135deg, #3a4736 0%, #24291f 45%, #221f1a 100%);
+    linear-gradient(90deg, rgba(34, 31, 26, 0.92) 0%, rgba(34, 31, 26, 0.78) 42%, rgba(34, 31, 26, 0.25) 100%),
+    linear-gradient(180deg, rgba(34, 31, 26, 0) 60%, rgba(34, 31, 26, 0.85) 100%),
+    var(--hero-image) center / cover no-repeat,
+    var(--color-dark);
+}
+
+.hero-credit {
+  position: absolute;
+  right: 24px;
+  bottom: 12px;
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 720px) {
+  .hero-backdrop {
+    background:
+      linear-gradient(180deg, rgba(34, 31, 26, 0.72) 0%, rgba(34, 31, 26, 0.9) 70%),
+      var(--hero-image) 65% center / cover no-repeat,
+      var(--color-dark);
+  }
 }
 
 .hero-inner {
@@ -85,5 +106,14 @@
 
   .hero-facts {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-credit {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    padding: 0 20px 16px;
   }
 }

@@ -1,10 +1,16 @@
+import type { CSSProperties } from 'react'
 import { hero } from '../content'
+import heroImage from '../assets/renders/hero-towers-lagoon.jpg'
 import { LEAD_FORM_URL } from '../config'
 import './Hero.css'
 
 export default function Hero() {
   return (
-    <section className="hero" id="top">
+    <section
+      className="hero"
+      id="top"
+      style={{ '--hero-image': `url(${heroImage})` } as CSSProperties}
+    >
       <div className="hero-backdrop" aria-hidden="true" />
       <div className="container hero-inner">
         <span className="pill hero-eyebrow">{hero.eyebrow}</span>
@@ -29,6 +35,7 @@ export default function Hero() {
           ))}
         </dl>
       </div>
+      <p className="hero-credit">Artist’s impression</p>
     </section>
   )
 }
